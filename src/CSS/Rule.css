@@ -1,0 +1,54 @@
+.Column {
+  width: 255px;
+  margin: 0.5vmax 0;
+  flex: 0 0 auto;
+  min-height: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.header div:first-child {
+  display: flex;
+  gap: 1rem;
+}
+
+.header div:last-child {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.header div:last-child:hover {
+  cursor: pointer;
+}
+
+.header div .heading-icon {
+  height: 1rem;
+}
+
+.header .user-icon {
+  border-radius: 100%;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.header .user-icon div {
+  width: 0.5rem;
+  height: 0.5rem;
+  border: solid 1px white;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -15%;
+  right: -15%;
+}

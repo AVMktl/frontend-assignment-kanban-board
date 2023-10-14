@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.Card {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: #63636333 0px 2px 8px 0px;
+  margin: 1rem 0;
+  font-size: 0.7rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.Card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.Card .container {
+  min-height: 6rem;
+  padding: 0.5rem 1rem;
+  display: grid;
+  align-items: center;
+}
+
+.container .first {
+  font-size: 0.75rem;
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container > .first > div {
+  border-radius: 100%;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.container > .first > div > div {
+  width: 0.5rem;
+  height: 0.5rem;
+  border: solid 1px white;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -15%;
+  right: -15%;
+}
+
+.container .second {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  width: 85%;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: baseline;
+  font-size: small;
+}
+
+.container .third {
+  border: 1px solid lightgrey;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.container .second img,
+.container .third img {
+  height: 12px;
+  padding-right: 5px;
+}
+
+.container .parent {
+  display: inline-flex;
+  align-items: center;
+}

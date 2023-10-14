@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.Display-Button {
+  padding: 1vmax 2vmax 2vmax;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  border-bottom: solid lightgrey 1px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, #ffffff40 0px 1px 0px inset;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: solid #dedede 1px;
+  border-radius: 5px;
+  box-shadow: #63636333 0px 2px 8px 0px;
+}
+
+.btn:hover {
+  box-shadow: #636363 0px 2px 8px 0px;
+}
+
+.btn svg {
+  color: #000000aa;
+}
+
+.btn svg:first-child {
+  height: 12px;
+  transform: rotateZ(90deg);
+}
+
+.btn svg:last-child {
+  height: 1rem;
+  position: relative;
+  top: 2px;
+}
+
+.dropdown-list {
+  width: 22vmax;
+  background-color: #f5f5f5;
+  border: solid #dedede 1px;
+  border-radius: 10px;
+  padding: 1vmax;
+  box-shadow: #63636333 0px 2px 8px 0px;
+  position: absolute;
+  top: 65px;
+  left: -999px;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+}
+
+.dropdown-list:hover {
+  box-shadow: #63636311 0px 2px 8px 0px;
+}
+
+.dropdown-list.show {
+  left: 2vmax;
+  visibility: visible;
+}
+
+.dropdown-list {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown-list.show {
+  opacity: 1;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.dropdown-list.show {
+  animation: bounceIn 0.5s;
+}
+
+.dropdown-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.dropdown-items label {
+  color: #636363;
+}
+
+.dropdown-items select {
+  width: 40%;
+  font-size: medium;
+  font-weight: 500;
+  padding-left: 2px;
+}
+
+@media screen and (max-width: 520px), (max-height: 520px) {
+  .dropdown-list {
+    width: 80vmin;
+  }
+}
